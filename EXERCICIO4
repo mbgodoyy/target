@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+
+    float sp = 67836.43;
+    float rj = 36678.66;
+    float mg = 29229.88;
+    float es = 27165.48;
+    float others = 19849.53;
+
+   
+    float total = sp + rj + mg + es + others;
+
+
+    float porcento_sp = (sp / total) * 100;
+    float porcento_rj = (rj / total) * 100;
+    float porcento_mg = (mg / total) * 100;
+    float porcento_es = (es / total) * 100;
+    float porcento_others = (others / total) * 100;
+
+ 
+    printf(" Aqui o percentual de representaçao por estado:\n");
+    printf("Sao Paulo: %.2f%%\n", porcento_sp);
+    printf("Rio de Janeiro: %.2f%%\n", porcento_rj);
+    printf("Minas Gerais: %.2f%%\n", porcento_mg);
+    printf("Espirito Santo: %.2f%%\n", porcento_es);
+    printf("Outros: %.2f%%\n", porcento_others);
+
+    return 0;
+}

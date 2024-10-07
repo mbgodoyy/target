@@ -1,0 +1,44 @@
+import json
+
+def analise(dados):
+  
+    dias_validos = [dia['valor'] for dia in dados if dia['valor'] > 0]
+
+    if len(dias_validos) == 0:
+        print("Não há dados válidos de faturamento.")
+        return
+
+   
+    menor_valor = min(dias_validos)
+    maior_valor = max(dias_validos)
+
+ 
+    media_mensal = sum(dias_validos) / len(dias_validos)
+
+   
+    dias_acima_media = sum(1 for valor in dias_validos if valor > media_mensal)
+
+    
+    print(f"Menor valor de faturamento: R$ {menor_valor:.2f}")
+    print(f"Maior valor de faturamento: R$ {maior_valor:.2f}")
+    print(f"Número de dias com faturamento acima da média mensal: {dias_acima_media}")
+
+
+def carregar_dados_json(arquivo):
+    with open(arquivo, 'r') as file:
+        dados = json.load(file)
+    return dados
+
+
+if __name__ == "__main__":
+    # Substitua o caminho 'faturamento.json' pelo caminho correto do arquivo JSON que você tem.
+    arquivo_json = 'faturamento.json'
+    
+  
+    dados_faturamento = carregar_dados_json(arquivo_json)
+    
+    
+    analise(dados_faturamento)
+
+
+

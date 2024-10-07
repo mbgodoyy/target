@@ -1,1 +1,18 @@
+No código apresentado, entendemos que enquanto K for menor que INDICE, o loop continua, dessa forma dentro dele, sempre K é incrementado da soma de +1. Se o loop começa com K = 0 
+e termina com K = 13, então teremos:
 
+K = 1 ou seja SOMA = 0 + 1 = 1
+K = 2 ou seja SOMA = 1 + 2 = 3
+K = 3 ou seja SOMA = 3 + 3 = 6
+k = 4 ou seja SOMA = 6 + 4 = 10
+K = 5 ou seja SOMA = 10 + 5 = 15
+K = 6 ou seja SOMA = 15 + 6 = 21
+K = 7 ou seja SOMA = 21 + 7 = 28
+K = 8 ou seja SOMA = 28 + 8 = 36
+K = 9 ou seja SOMA = 36 + 9 = 45
+K = 10 ou seja SOMA = 45 + 10 = 55
+K = 11 ou seja SOMA = 55 + 11 = 66
+K = 12 ou seja SOMA = 66 + 12 = 78
+K = 13 ou seja SOMA = 78 + 13 = 91 
+
+sendo 91 o valor da variavel SOMA 

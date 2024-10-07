@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+void inverter(char str[]) {
+    int inicio = 0;
+    int fim = strlen(str) - 1; 
+    char temp;
+
+   
+    while (inicio < fim) {
+        
+        temp = str[inicio];
+        str[inicio] = str[fim];
+        str[fim] = temp;
+
+      
+        inicio++;
+        fim--;
+    }
+}
+
+int main() {
+   
+    char str[] = "Segue o exemplo de string";
+
+   
+    printf("String original: %s\n", str);
+
+ 
+    inverter(str);
+
+  
+    printf("Segue a string invertida: %s\n", str);
+
+    return 0;
+}
